@@ -12,6 +12,8 @@ server.use(express.json());
 server.use(helmet());
 server.use(morgan('dev'));
 
+//Routes
+
 server.use('/api/actions', actionsRouter);
 server.use('/api/projects', projectsRouter);
 
