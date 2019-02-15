@@ -19,7 +19,7 @@ server.use('/api/projects', projectsRouter);
 
 server.get("/", (req, res) => {
     res.send(`
-        <h2>Projects and Actions API</h>
+        <h2>Projects and Actions API</h2>
       `);
   });
 

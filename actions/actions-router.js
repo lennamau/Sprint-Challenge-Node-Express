@@ -62,11 +62,9 @@ router.post("/", (req, res) => {
           .json({ error: "There was no project found with the specified ID." });
       });
   } else {
-    res
-      .status(400)
-      .json({
-        error: "Please include proper Project ID, description, and notes."
-      });
+    res.status(400).json({
+      error: "Please include proper Project ID, description, and notes."
+    });
   }
 });
 
