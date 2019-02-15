@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
     .catch(err => {
       res
         .status(500)
-        .json({ message: "The action information could not be retrieved" });
+        .json({ error: "The action information could not be retrieved" });
     });
 });
 
@@ -109,7 +109,7 @@ router.delete("/:id", (req, res) => {
       }
     })
     .catch(() => {
-      res.status(500).json({ error: "The action could not be updated." });
+      res.status(500).json({ error: "The action could not be deleted." });
     });
 });
 
